@@ -1,0 +1,40 @@
+@import "vars";
+@import "mixins";
+
+.footer {
+    display: flex;
+    gap: 200px;
+    margin-bottom: 300px;
+
+    &__item {
+        width: 393px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 50px;
+
+        &__logo {
+            width: 177px;
+        }
+
+        &__icons {
+            width: 250px;
+            height: 22px;
+        }
+
+        &__text {
+            @include font_jost(22px);
+            color: $color_text_third;
+        }
+
+        &__title {
+            @include font_DM(25px);
+            color: $color_text;
+        }
+
+        &__text {
+            @include font_jost(22px);
+            color: $color_text_third;
+        }
+    }
+}

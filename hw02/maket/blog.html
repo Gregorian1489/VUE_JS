@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/hw01/maket/style.css">
+    <title>Blog</title>
+</head>
+<body>
+    <header class="header center">
+        <img class="header__logo" src="/hw01/maket/img/Logo.svg" alt="logo">
+        <nav class="header__nav">
+            <a href="#"><span class="header__nav__link">Home</span></a>
+            <a href="#"><span class="header__nav__link">Project</span></a>
+            <a href="#"><span class="header__nav__link">Blog</span></a>
+        </nav>
+    </header>
+    <section class="banner__2">
+        <img class="banner__2__img" src="/hw01/maket/img/banner_2.png" alt="banner">
+        <div class="banner__2__title">
+            <p class="banner__2__title__text1">Articles & News</p>
+            <p class="banner__2__title__text2">Blog</p>
+        </div>
+    </section>
+    <section class="latest_post center">
+        <p class="latest_post__title">Latest Post</p>
+        <div class="latest_post__item">
+            <img src="/hw01/maket/img/img_page2_post.png" alt="kitchen">
+            <div class="latest_post__item__info">
+                <p class="latest_post__item__info__text1">Low Cost Latest Invented Interior <br> Designing Ideas</p>
+                <p class="latest_post__item__info__text2">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief.</p>
+                <p class="latest_post__item__info__text3">Lorem Ipsum is not simply random text. It has roots in a piece of classica.</p>
+                <div class="latest_post__item__info__form">
+                    <p class="latest_post__item__info__form__text">26 December,2022 </p>
+                    <button class="latest_post__item__info__form__button"><img src="/hw01/maket/img/Vector_2.svg" alt="vector"></button>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+    <section class="news center">
+        <p class="news__title">Articles & News</p>
+        <div class="news__items" id="cardbox-container">
+            <div class="news__items__item" v-for="article in articlesData">
+                <img :src="article.src" :alt="article.alt" class="news__items__item__img">
+                <p class="news__items__item__text">{{article.title}}</p>
+                <a href="#" class="news__items__item__tag">{{article.button}}</a>
+                <div class="news__items__item__content">
+                    <p class="news__items__item__content__date">{{article.date}}</p>
+                    <button class="news__items__item__content__button"><img src="/hw01/maket/img/Vector_2.svg" alt="vector"></button>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer center">
+        <div class="footer__item">
+            <img class="footer__item__logo" src="/hw01/maket/img/Logo.svg" alt="">
+            <p class="footer__item__text">It is a long established fact that a reader will be distracted lookings.</p>
+            <img class="footer__item__icons" src="/hw01/maket/img/icons.png" alt="vector">
+        </div>
+        <div class="footer__item">
+            <p class="footer__item__title">Pages</p>
+            <p class="footer__item__text">Home</p>
+            <p class="footer__item__text">Project</p>
+            <p class="footer__item__text">Blog</p>
+        </div>
+        <div class="footer__item">
+            <p class="footer__item__title">Contact</p>
+            <p class="footer__item__text">55 East Birchwood Ave. Brooklyn, New York 11201</p>
+            <p class="footer__item__text">contact@interno.com</p>
+            <p class="footer__item__text">(123) 456 - 7890</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+    <script>
+        new Vue({
+            el: '#cardbox-container',
+            data: {
+                articlesData: [
+                { id: 1, src: '/hw01/maket/img/img_blog_1.png', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                { id: 2, src: '/hw01/maket/img/img_blog_2.png', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                { id: 3, src: '/hw01/maket/img/img_blog_3.png', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
+                { id: 4, src: '/hw01/maket/img/img_blog_4.png', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                { id: 5, src: '/hw01/maket/img/img_blog_5.png', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                { id: 6, src: '/hw01/maket/img/img_blog_6.png', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' }
+                ]
+            }
+        })
+    </script>
+    
+        
+    
+</body>
+</html>

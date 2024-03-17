@@ -1,0 +1,35 @@
+@mixin flex_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex_center($gap) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin font_jost($size) {
+    font-family: 'Jost';
+    font-style: normal;
+    line-height: normal;
+    font-size: $size;
+}
+
+@mixin font_jost_semiBold($size) {
+    font-family: 'Jost Semibold';
+    font-style: normal;
+    line-height: normal;
+    font-weight: 600;
+    font-size: $size;
+}
+
+@mixin font_DM($size) {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: $size;
+}

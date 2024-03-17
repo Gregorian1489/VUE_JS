@@ -1,0 +1,16 @@
+@import "vars";
+@import "mixins";
+
+.header {
+    @include flex_between();
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &__nav {
+        @include flex_center(40px); 
+        &__link {
+            color: $color_text;
+            @include font_jost(20px);
+        }       
+    }
+   
+}
