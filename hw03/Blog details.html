@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/hw01/maket/style.css">
+    <title>Blog details</title>
+</head>
+<body>
+    <header class="header center">
+        <img class="header__logo" src="/hw01/maket/img/Logo.svg" alt="logo">
+        <nav class="header__nav">
+            <a href="#"><span class="header__nav__link">Home</span></a>
+            <a href="#"><span class="header__nav__link">Project</span></a>
+            <a href="#"><span class="header__nav__link">Blog</span></a>
+        </nav>
+    </header>
+    <section class="banner__2">
+        <img class="banner__2__img" src="/hw01/maket/img/banner_3.png" alt="banner">
+    </section>        
+    <section class="blog__details center" id="blog_details">
+        <main-blog></main-blog>
+
+    </section>
+   
+
+    <footer class="footer center">
+        <div class="footer__item">
+            <img class="footer__item__logo" src="/hw01/maket/img/Logo.svg" alt="">
+            <p class="footer__item__text">It is a long established fact that a reader will be distracted lookings.</p>
+            <img class="footer__item__icons" src="/hw01/maket/img/icons.png" alt="vector">
+        </div>
+        <div class="footer__item">
+            <p class="footer__item__title">Pages</p>
+            <p class="footer__item__text">Home</p>
+            <p class="footer__item__text">Project</p>
+            <p class="footer__item__text">Blog</p>
+        </div>
+        <div class="footer__item">
+            <p class="footer__item__title">Contact</p>
+            <p class="footer__item__text">55 East Birchwood Ave. Brooklyn, New York 11201</p>
+            <p class="footer__item__text">contact@interno.com</p>
+            <p class="footer__item__text">(123) 456 - 7890</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+    <script src="/hw03/blog-details.js"></script>
+    <script>
+        new Vue({
+            el: '#blog_details',
+            data: {
+                
+            }
+        })
+    </script>
+</body>
+</html>

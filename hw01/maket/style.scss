@@ -426,3 +426,109 @@
     }
 }
 
+
+.blog__details{
+    
+    margin-top: 300px;
+    margin-bottom: 200px;
+
+    &__wrapper {
+        display: flex;
+        gap: 52px;
+
+        &__left {
+            width: 800px;
+            display: flex;
+            flex-direction: column;
+
+            &__title {
+                @include font_DM(50px);
+                color: $color_text;
+                margin-bottom: 20px;
+            }
+
+            &__img {
+                margin-bottom: 40px;
+            }
+
+            &__data {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 40px;
+
+                &__date {
+                    @include font_jost(16px);
+                    color: $color_text_third;
+                }
+
+                &__crump {
+                    @include font_jost(16px);
+                    color: $color_text_third;
+                }
+            }
+
+            &__article {
+                @include font_jost(22px);
+                color: $color_text_third;
+                margin-bottom: 40px;
+            }
+
+            &__img__2 {
+                margin-bottom: 40px;
+            }
+
+            &__article__2 {
+                @include font_DM(50px);
+                color: $color_text;
+                margin-bottom: 30px;
+
+                &__text__1 {
+                    @include font_jost(22px);
+                    color: $color_text_third;
+                    margin-bottom: 30px;
+                }
+
+                &__text__2 {
+                    @include font_jost(22px);
+                    color: $color_text_third;
+                    margin-bottom: 30px;
+
+                    &__span {
+                        @include font_DM(20px);
+                        color: $color_text_brown;
+                    }
+                }
+            }
+
+        }
+
+        &__right {
+            padding-left: 20px;
+
+            &__title {
+                @include font_DM(25px);
+                color: $color_text;
+                margin-bottom: 20px;
+            }
+
+            &__button__1 {
+                min-width: 120px;
+                height: 40px;
+                border-radius: 10px;
+                background-color: $color_background;
+                border-color: transparent;
+                @include font_jost(16px);
+                color: $color_text_third;
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+
+            &__button__1:hover {
+                background-color: $color_text;
+                color: $color_background;
+                transition: 0.3s;
+                
+            }
+        }
+    }
+}

@@ -503,4 +503,124 @@
   border-radius: 50%;
   background-color: #F4F0EC;
   border-color: transparent;
+}
+
+.blog__details {
+  margin-top: 300px;
+  margin-bottom: 200px;
+}
+.blog__details__wrapper {
+  display: flex;
+  gap: 52px;
+}
+.blog__details__wrapper__left {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+.blog__details__wrapper__left__title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 50px;
+  color: #292F36;
+  margin-bottom: 20px;
+}
+.blog__details__wrapper__left__img {
+  margin-bottom: 40px;
+}
+.blog__details__wrapper__left__data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.blog__details__wrapper__left__data__date {
+  font-family: "Jost";
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #4D5053;
+}
+.blog__details__wrapper__left__data__crump {
+  font-family: "Jost";
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #4D5053;
+}
+.blog__details__wrapper__left__article {
+  font-family: "Jost";
+  font-style: normal;
+  line-height: normal;
+  font-size: 22px;
+  color: #4D5053;
+  margin-bottom: 40px;
+}
+.blog__details__wrapper__left__img__2 {
+  margin-bottom: 40px;
+}
+.blog__details__wrapper__left__article__2 {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 50px;
+  color: #292F36;
+  margin-bottom: 30px;
+}
+.blog__details__wrapper__left__article__2__text__1 {
+  font-family: "Jost";
+  font-style: normal;
+  line-height: normal;
+  font-size: 22px;
+  color: #4D5053;
+  margin-bottom: 30px;
+}
+.blog__details__wrapper__left__article__2__text__2 {
+  font-family: "Jost";
+  font-style: normal;
+  line-height: normal;
+  font-size: 22px;
+  color: #4D5053;
+  margin-bottom: 30px;
+}
+.blog__details__wrapper__left__article__2__text__2__span {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #CDA274;
+}
+.blog__details__wrapper__right {
+  padding-left: 20px;
+}
+.blog__details__wrapper__right__title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 25px;
+  color: #292F36;
+  margin-bottom: 20px;
+}
+.blog__details__wrapper__right__button__1 {
+  min-width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #F4F0EC;
+  border-color: transparent;
+  font-family: "Jost";
+  font-style: normal;
+  line-height: normal;
+  font-size: 16px;
+  color: #4D5053;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.blog__details__wrapper__right__button__1:hover {
+  background-color: #292F36;
+  color: #F4F0EC;
+  transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */
