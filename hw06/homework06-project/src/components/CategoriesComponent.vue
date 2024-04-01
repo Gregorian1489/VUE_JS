@@ -6,10 +6,10 @@
         </button>
     </section>
     <section class="projects">
-            <section class="projects__left" v-for="project in projectData" :key="project.id">
+            <section class="projects__left" v-for="temp in tempArray" :key="temp.id">
                 <div class="projects__left__item">
-                    <img :src="project.img" :alt="project.alt" class="projects__left__item__img">
-                    <p class="projects__left__item__text">{{project.title}}</p>
+                    <img :src="temp.img" :alt="temp.alt" class="projects__left__item__img">
+                    <p class="projects__left__item__text">{{temp.title}}</p>
                     <p>Decor/Architecture</p>   
                 </div>
              </section>
@@ -36,14 +36,17 @@ export default {
         { id: 3, img: "", alt: 'interior', title: 'Minimal Bedroom Table', tag: 'Bedroom' },
         { id: 4, img: "", alt: 'interior', title: 'Modern Bedroom', tag: 'Bedroom' },
         { id: 5, img: "", alt: 'interior', title: 'Bathroom', tag: 'Bathroom' },
+        { id: 5, img: "", alt: 'interior', title: 'Bathroom', tag: 'Kitchen' },
+        { id: 5, img: "", alt: 'interior', title: 'Kakaya to bolshaya statia', tag: 'Kitchen' },
 
-      ]
+      ],
+      tempArray: [],
     };
   },
   methods: {
     changeButton(button) {
-        
-        this.projectData = this.projectData.filter(project => project.tag === button);
+        this.tempArray = this.projectData.slice();
+        this.tempArray = this.tempArray.filter(project => project.tag === button);
 
     }
   },
