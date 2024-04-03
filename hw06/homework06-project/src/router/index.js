@@ -3,6 +3,7 @@ import HomePage from '../views/HomePage.vue'
 import BlogPage from '../views/BlogPage.vue'
 import ProjectPage from '../views/ProjectPage.vue'
 import OurProject from '../views/OurProject.vue'
+import ProjectDetails from '../views/ProjectDetails.vue'
 import VueRouter from 'vue-router'
 
 
@@ -28,6 +29,11 @@ const routes = [
     path: '/our_project',
     name: 'our_project',
     component: OurProject,
+  },
+  {
+    path: '/project_details',
+    name: 'project_details',
+    component: ProjectDetails,
   }
 ]
 

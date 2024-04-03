@@ -9,8 +9,11 @@
             <section class="projects__left" v-for="temp in tempArray" :key="temp.id">
                 <div class="projects__left__item">
                     <img :src="temp.img" :alt="temp.alt" class="projects__left__item__img">
-                    <p class="projects__left__item__text">{{temp.title}}</p>
-                    <p>Decor/Architecture</p>   
+                    <div class="projects__left__item__content">
+                      <p class="projects__left__item__content__text">{{temp.title}}</p>
+                      <p>Decor/Architecture</p>   
+                      <router-link to="/project_details"><button class="projects__left__item__content__button">></button></router-link>
+                    </div>
                 </div>
              </section>
     </section>
