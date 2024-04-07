@@ -3,7 +3,7 @@
         <div class="blog__details__wrapper">
         <div class="blog__details__wrapper__left">
             <p class="blog__details__wrapper__left__title">{{title}}</p>
-            <img class="blog__details__wrapper__left__img" :src="img" alt="banner">
+            <img class="blog__details__wrapper__left__img" :src="require(`../assets/img/${img}.png`)" alt="banner">
             <div class="blog__details__wrapper__left__data">
                 <p class="blog__details__wrapper__left__data__date">{{date}}</p>
                 <p class="blog__details__wrapper__left__data__crump">Interior / Home / Decore</p>
@@ -63,11 +63,11 @@ export default {
             { id: 6, title: 'Interior Design' },
         ],
         articlesData: [
-            { id: 1, img:'../assets/img/img_blog_details_1.png', alt: 'interior', title: 'Let’s Get Solution for Building Construction Work', content:"Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable. Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.", date: '26 December,2022', tag: "Kitchen",},
-            { id: 2, img: '../assets/img/img_blog_details_22.png', alt: 'interior', title: 'Title for Bedroom', content:"Content about Bedroom", date: '22 January,2023', tag: "Bedroom",},
+            { id: 1, img:'img_blog_details_1', alt: 'interior', title: 'Let’s Get Solution for Building Construction Work', content:"Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable. Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.", date: '26 December,2022', tag: "Kitchen",},
+            { id: 2, img: 'img_blog_details_22', alt: 'interior', title: 'Title for Bedroom', content:"Content about Bedroom", date: '22 January,2023', tag: "Bedroom",},
         ],
         title: 'Default title',
-        img: '../assets/img/img_blog_details_1.png',
+        img: "img_blog_details_1",
         date: '31 December,2000',
         content: 'Default content',
       

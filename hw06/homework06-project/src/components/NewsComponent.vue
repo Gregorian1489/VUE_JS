@@ -3,7 +3,7 @@
         <p class="news__title">Articles & News</p>
         <div class="news__items" id="cardbox-container">
             <div class="news__items__item" v-for="article in articlesData" :key="article.id">
-                <img :src="article.src" :alt="article.alt" class="news__items__item__img">
+                <img :src="require(`../assets/img/${article.src}.png`)" :alt="article.alt" class="news__items__item__img">
                 <p class="news__items__item__text">{{article.title}}</p>
                 <a href="#" class="news__items__item__tag">{{article.button}}</a>
                 <div class="news__items__item__content">
@@ -23,12 +23,12 @@ export default {
   data() {
     return {
         articlesData: [
-                { id: 1, src:"../assets/img/img_blog_1.png", alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
-                { id: 2, src: '../assets/img/img_blog_2.png', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
-                { id: 3, src: '../assets/img/img_blog_3.png', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
-                { id: 4, src: '../assets/img/img_blog_4.png', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
-                { id: 5, src: '../assets/img/img_blog_5.png', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
-                { id: 6, src: '../assets/img/img_blog_6.png', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' }
+                { id: 1, src:"img_blog_1", alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                { id: 2, src: 'img_blog_2', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                { id: 3, src: 'img_blog_3', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
+                { id: 4, src: 'img_blog_4', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                { id: 5, src: 'img_blog_5', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                { id: 6, src: 'img_blog_6', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' }
                 ]
        };
   },
@@ -108,6 +108,10 @@ export default {
                     border-radius: 50%;
                     background-color: $color_background;
                     border-color: transparent;
+                }
+
+                &__button:hover {
+                    background-color: $color_text_brown;
                 }
                 
             }

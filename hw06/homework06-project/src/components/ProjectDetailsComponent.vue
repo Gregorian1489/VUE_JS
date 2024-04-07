@@ -4,7 +4,7 @@
         <p class="project__details__wrapper__title">{{ titleitems }}</p>
         <p class="project__details__wrapper__text">{{ descriptionitems }}</p>
     </div>
-    <img :src="imgitems" :alt="altitems">
+    <img v-bind:src="require(`../assets/img/${imgitems}.png`)" :alt="altitems">
     <div class="project__details__slider">
         <button class="project__details__slider__button_1" @click="slider(0)"></button>
         <button class="project__details__slider__button_2" @click="slider(1)"></button>
